@@ -1,0 +1,62 @@
+I. TM 어셈블리 프로그래밍
+- 프로세스의 메모리 구조를 그려라. (2-funCall-stack.pdf, 2 쪽)
+- Java 에서 new Class() 형태로 동적으로 생성되는 객체들을 위해서 생성되는 메모리
+공간은 어디에 할당되는가? (2-funCall-stack.pdf, 2 쪽)
+- 함수의 호출 및 return 시 변화하는 스택의 모습 (2-funCall-stack.pdf, 3 쪽)
+- 함수 호출 시 파라메터가 전달되는 모습 (4-cm2tm-ex.pdf)
+- C 언어를 tm 어셈블리 언어로 번역하는 예 (fact.tm, add.tm, global.tm, ...)
+
+II. Parsing
+- 컴파일러의 세부적인 진행의 각 단계에 대해서 설명하라. (1-intro-Compiler.pdf, 1 쪽)
+- Scanner 의 기능은 무엇이고, 입력과 출력은 무엇인가? 또한, Scanner 에서 사용되는 형식
+언어 이론은 무엇인가? (1-intro-Compiler.pdf, 2-3 쪽)
+- Parser 의 입력과 출력은 무엇인가? Parser 에서 사용되는 형식언어 이론은 Context-Free
+grammar 이다. 이때, Terminal 은 어떻게 표현되는가? (1-intro-Compiler.pdf, 2 쪽,
+3-LexYacc.pdf. 12 쪽)
+- 컴파일러의 Symbol Table 이란 무엇이며, 이것은 어떤 기능을 해야 하는가? (3-LexYacc.pdf.
+26 쪽)
+- Lex 에서 사용하는 스트링 패턴 (확장된 regular expression) (3-LexYacc.pdf 파일, 9 – 10 쪽)
+- Yacc 에서 응용되는 Context-Free Grammar 사용 예 (3-LexYacc.pdf 파일, 12 쪽)
+- PLY 의 regular expression 사용 방법 (1-PLYTalk.pdf 파일, 22 – 33 쪽, 2-ply_lex_ex.py)
+- PLY 의 Contex-Free Grammar 사용 방법 (1-PLYTalk.pdf 파일, 42 – 46 쪽, 3-ply_calc.py)
+
+III. Evaluator(Interpreter) of AST
+- Abstract Syntax Tree 의 표현 (1-PLYTalk.pdf 파일, 56 쪽, [과제] Tree 코딩 ...)
+- AST 를 입력으로 받는 evaluator ([과제] Tree 코딩 ... 의 aExp.py)
+
+- 위의 aExp.py 코딩에서 함수 aEval(tree) 는 side-effect 함수이다. 즉, symbol tables 인
+names 를 전역 변수로 사용하고 있다. 이것을 전역 변수를 사용하지 않는 함수, 즉
+aEval(tree, names) 의 형태로 정의되도록 수정하여 코딩하라 (반드시 출제됨).
+
+IV. 명령형 프로그래밍 vs 함수형 프로그래밍
+- side-effect 함수가 정의되는 예
+- side-effect 함수로 코딩할 때 어떤 문제가 발생할 수 있는가?
+- side-effect 함수와 대비되는 순수 함수형 프로그래밍은 어떤 형태로 정의되는가?
+- 입출력은 side-effect 함수로 코딩하기 어렵다. 만약 입출력을 순수 함수형
+프로그래밍으로 코딩한다면 어떤 문제가 있는가?
+- 프로그램의 참조 투명성이란 무엇인가?
+- 명령형 프로그래밍에서 상태(state) 란 무엇인가? 순수 함수형 프로그래밍에서는 상태가
+발생하지 않는다. 왜 그런가?
+
+V. 람다 계산법 코딩하기
+- 함수형 인터페이스 타입 (funInterfEx.pdf, funInterface.pdf)
+Function<T,R> R apply(T t)
+Supply<T> T get()
+Runnable void run()
+Consumer<T> void accept(T t)
+Predicate<T> Boolean test(T t)
+- Java 로 람다 식 코딩한 예 이해하기 (Lambda.java)
+- Scala 로 람다 식 코딩한 예 이해하기 (lambda.scala)
+- Java 에서 정의된 타입 Function<Integer, Function<Integer, Integer>> add = x -> (y -> x + y)
+을 Scala 로 코딩하면?
+val add: _____________ = x => (y => x + y)
+- LambdaGenerics.java 의 코드 이해하기
+Generics (type variables)
+g 함수의 타입
+람다 식에 대한 타입 및 apply 메소드
+괄호 생략하기
+
+- 람다 계산법 (LambdaCalculus.pdf)
+람다 식의 괄호 생략 (left-associative, 15 쪽)
+a -conversion (17 쪽)
+람다 식의 Tree 표현 (18 쪽)

@@ -1,0 +1,34 @@
+2022.11.16 03:02:27 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/swb/Documents/courses/pl/lecture/twice/.metals/lsp.trace.json or /Users/swb/Library/Caches/org.scalameta.metals/lsp.trace.json[0m
+2022.11.16 03:02:28 INFO  logging to file /Users/swb/Documents/courses/pl/lecture/twice/.metals/metals.log[0m
+2022.11.16 03:02:28 INFO  Started: Metals version 0.11.9 in workspace '/Users/swb/Documents/courses/pl/lecture/twice' for client Visual Studio Code 1.73.0.[0m
+2022.11.16 03:02:29 INFO  time: initialize in 1.09s[0m
+2022.11.16 03:02:29 WARN  Build server is not auto-connectable.[0m
+2022.11.16 03:02:29 WARN  no build tool detected in workspace '/Users/swb/Documents/courses/pl/lecture/twice'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2022.11.16 03:02:29 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/twice.scala[0m
+2022.11.16 03:02:31 INFO  no build target found for /Users/swb/Documents/courses/pl/lecture/twice/twice.scala. Using presentation compiler with project's scala-library version: 3.2.0[0m
+2022.11.16 03:02:32 INFO  time: code lens generation in 2.78s[0m
+2022.11.16 03:02:58 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+Nov 16, 2022 3:03:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+Nov 16, 2022 3:03:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+2022.11.16 03:07:20 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:07:22 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:07:26 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:07:31 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:07:35 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:08:22 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+Nov 16, 2022 3:08:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 97
+2022.11.16 03:08:30 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:08:37 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:08:49 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:08:51 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:08:52 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:09:25 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:09:30 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:09:32 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:09:39 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:09:43 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:09:52 WARN  no build target for: /Users/swb/Documents/courses/pl/lecture/twice/TwiceGen.java[0m
+2022.11.16 03:10:19 INFO  shutting down Metals[0m
